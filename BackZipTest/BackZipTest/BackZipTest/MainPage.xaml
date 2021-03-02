@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BackZipTest.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Background Zip Test" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Button Text="START" Clicked="clickStart" />
+        <Button Text="STOP" Clicked="clickStop" />
+
+        <Label Text="{Binding Now}" HorizontalTextAlignment="Center" FontSize="32"/>
+        <Label Text="{Binding Count}" HorizontalTextAlignment="Center" FontSize="32"/>
+        <Label Text="{Binding Message}" HorizontalTextAlignment="Center" FontSize="32"/>
+    </StackLayout>
+</ContentPage>
