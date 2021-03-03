@@ -25,36 +25,38 @@ namespace RequiresDeviceIdleTest
         MainViewModel _vm;
         private void clickStartTest0(object sender, EventArgs e)
         {
+            _vm.GoTest0();
 
         }
         private void clickStartTest1(object sender, EventArgs e)
         {
+            _vm.GoTest1();
 
         }
         private void clickStartTest2(object sender, EventArgs e)
         {
-
+            _vm.GoTest2();
         }
         private void clickStartTest3(object sender, EventArgs e)
         {
+            _vm.GoTest3();
 
         }
         private void clickStartTest4(object sender, EventArgs e)
         {
+            _vm.GoTest4();
 
         }
         private void clickStartTest5(object sender, EventArgs e)
         {
+            _vm.GoTest5();
 
         }
         private void clickStartTest6(object sender, EventArgs e)
         {
+            _vm.GoTest6();
 
         }
 
-        private void clickKick(object sender, EventArgs e)
-        {
-
-        }
     }
 }

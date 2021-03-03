@@ -51,30 +51,37 @@ namespace RequiresDeviceIdleTest
         /// </summary>
         public void GoTest0()
         {
+            this.Message = $"start 0 " + DateTime.Now.ToString("HH:mm:ss");
             _backtask.Kick(0);
         }
         public void GoTest1()
         {
+            this.Message = $"start 1 " + DateTime.Now.ToString("HH:mm:ss");
             _backtask.Kick(1);
         }
         public void GoTest2()
         {
+            this.Message = $"start 2 " + DateTime.Now.ToString("HH:mm:ss");
             _backtask.Kick(2);
         }
         public void GoTest3()
         {
+            this.Message = $"start 3 " + DateTime.Now.ToString("HH:mm:ss");
             _backtask.Kick(3);
         }
         public void GoTest4()
         {
+            this.Message = $"start 4 " + DateTime.Now.ToString("HH:mm:ss");
             _backtask.Kick(4);
         }
         public void GoTest5()
         {
+            this.Message = $"start 5 " + DateTime.Now.ToString("HH:mm:ss");
             _backtask.Kick(5);
         }
         public void GoTest6()
         {
+            this.Message = $"start 6 " + DateTime.Now.ToString("HH:mm:ss");
             _backtask.Kick(6);
         }
 

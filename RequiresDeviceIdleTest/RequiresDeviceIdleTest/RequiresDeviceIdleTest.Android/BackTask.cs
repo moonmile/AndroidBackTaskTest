@@ -46,7 +46,7 @@ namespace RequiresDeviceIdleTest.Droid
             }
         }
 
-        static int INTERVAL = 5;
+        static int INTERVAL = 16;
 
 
         // Doesn't work
@@ -187,7 +187,7 @@ namespace RequiresDeviceIdleTest.Droid
         public override Result DoWork()
         {
             Android.Util.Log.Debug("SampleWorker", "Work");
-            BackTask._me.GoCallback($"call {BackTask._me.num} " + DateTime.Now.ToString("HH:mm:ss"));
+            BackTask._me?.GoCallback($"call {BackTask._me.num} " + DateTime.Now.ToString("HH:mm:ss"));
             return Result.InvokeSuccess();
         }
     }
