@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RequiresDeviceIdleTest.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="RequiresDeviceIdle Test" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Label Text="{Binding Now}" HorizontalTextAlignment="Center" FontSize="32"/>
+        <Label Text="{Binding Count}" HorizontalTextAlignment="Center" FontSize="32"/>
+        <Label Text="{Binding Message}" HorizontalTextAlignment="Center" FontSize="32"/>
+
+        <Button Text="WorkTest0" Clicked="clickStartTest0" />
+        <Button Text="WorkTest1" Clicked="clickStartTest1" />
+        <Button Text="WorkTest2" Clicked="clickStartTest2" />
+        <Button Text="WorkTest3" Clicked="clickStartTest3" />
+        <Button Text="WorkTest4" Clicked="clickStartTest4" />
+        <Button Text="WorkTest5" Clicked="clickStartTest5" />
+        <Button Text="WorkTest6" Clicked="clickStartTest6" />
+
+    </StackLayout>
+
+</ContentPage>
