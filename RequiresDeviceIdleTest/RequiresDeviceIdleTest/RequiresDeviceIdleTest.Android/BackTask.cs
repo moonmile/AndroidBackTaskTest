@@ -53,7 +53,7 @@ namespace RequiresDeviceIdleTest.Droid
         private void WorkTest0()
         {
             this.num = 0;
-            var workManager = WorkManager.Instance; 
+            var workManager = WorkManager.GetInstance(Xamarin.Essentials.Platform.AppContext);
 
             var workRequestBuilder = new PeriodicWorkRequest.Builder(typeof(SampleWorker), TimeSpan.FromMinutes(INTERVAL))
                 .SetConstraints(new Constraints.Builder()
@@ -73,7 +73,7 @@ namespace RequiresDeviceIdleTest.Droid
         private void WorkTest1()
         {
             this.num = 1;
-            var workManager = WorkManager.Instance;
+            var workManager = WorkManager.GetInstance(Xamarin.Essentials.Platform.AppContext);
 
             var workRequestBuilder = new PeriodicWorkRequest.Builder(typeof(SampleWorker), TimeSpan.FromMinutes(INTERVAL))
                 .SetConstraints(new Constraints.Builder()
@@ -93,7 +93,7 @@ namespace RequiresDeviceIdleTest.Droid
         private void WorkTest2()
         {
             this.num = 2;
-            var workManager = WorkManager.Instance;
+            var workManager = WorkManager.GetInstance(Xamarin.Essentials.Platform.AppContext);
 
             var workRequestBuilder = new PeriodicWorkRequest.Builder(typeof(SampleWorker), TimeSpan.FromMinutes(INTERVAL))
                 .SetConstraints(new Constraints.Builder()
@@ -113,7 +113,7 @@ namespace RequiresDeviceIdleTest.Droid
         private void WorkTest3()
         {
             this.num = 3;
-            var workManager = WorkManager.Instance;
+            var workManager = WorkManager.GetInstance(Xamarin.Essentials.Platform.AppContext);
 
             var workRequestBuilder = new PeriodicWorkRequest.Builder(typeof(SampleWorker), TimeSpan.FromMinutes(INTERVAL))
                 .SetConstraints(new Constraints.Builder()
@@ -133,7 +133,7 @@ namespace RequiresDeviceIdleTest.Droid
         private void WorkTest4()
         {
             this.num = 4;
-            var workManager = WorkManager.Instance;
+            var workManager = WorkManager.GetInstance(Xamarin.Essentials.Platform.AppContext);
 
             var workRequestBuilder = new PeriodicWorkRequest.Builder(typeof(SampleWorker), TimeSpan.FromMinutes(INTERVAL));
 
@@ -148,7 +148,7 @@ namespace RequiresDeviceIdleTest.Droid
         private void WorkTest5()
         {
             this.num = 5;
-            var workManager = WorkManager.Instance;
+            var workManager = WorkManager.GetInstance(Xamarin.Essentials.Platform.AppContext);
 
             var workRequestBuilder = new PeriodicWorkRequest.Builder(typeof(SampleWorker), INTERVAL, TimeUnit.Minutes);
 
@@ -163,7 +163,7 @@ namespace RequiresDeviceIdleTest.Droid
         private void WorkTest6()
         {
             this.num = 6;
-            var workManager = WorkManager.Instance;
+            var workManager = WorkManager.GetInstance(Xamarin.Essentials.Platform.AppContext);
 
             var workRequestBuilder = PeriodicWorkRequest.Builder.From<SampleWorker>(INTERVAL, TimeUnit.Minutes);
 
